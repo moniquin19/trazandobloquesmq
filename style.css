@@ -1,0 +1,123 @@
+/*CSS reset settings here*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#caja {
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px 0px;
+}
+
+#cabecera {
+    min-height: 150px;
+    background-color: green;
+    margin: 0px 15px;
+}
+
+#navigacion {
+    min-height: 300px;
+    width: 16%;
+    background-color: blue;
+    display: inline-block;
+    margin: 15px;
+}
+
+#contenido {
+    min-height: 400px;
+    width: 55%;
+    background-color: red;
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: top;
+    padding: 7px 0 0 7px;
+    box-sizing: border-box;
+}
+
+.subcontenido {
+    min-height: 200px;
+    width: 30%;
+    background-color: yellow;
+    display: inline-block;
+    margin: 5px;
+}
+
+#advertencia {
+    min-height: 120px;
+    width: 96%;
+    background-color: purple;
+    margin-left: 5px;
+}
+
+
+/* Media Queries */
+
+@media (max-width:480px) {
+    #navigacion {
+        display: none;
+    }
+    #cabecera {
+        width: 98%;
+        margin-left: 1%;
+    }
+    #contenido {
+        width: 98%;
+        margin-left: 1%;
+        padding: 7%;
+    }
+    .subcontenido {
+        width: 95%;
+        min-height: 119px;
+    }
+    #advertencia {
+        width: 95%;
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 481px) and (max-width:1023px) {
+    #navigacion {
+        display: none;
+    }
+    #cabecera {
+        width: 94%;
+        margin-top: 0 auto;
+    }
+    #contenido {
+        width: 94%;
+        margin-left: 3%;
+        padding: 7%;
+    }
+    .subcontenido {
+        width: 45%;
+        min-height: 119px;
+    }
+    #advertencia {
+        width: 95%;
+        margin-top: 7%;
+    }
+}
+
+@media (min-width:1024px) {
+    #cabecera {
+        width: 97%;
+    }
+    #navigacion {
+        width: 27%;
+    }
+    #contenido {
+        width: 67%;
+        margin-left: 1%;
+        padding: 2%;
+    }
+    .subcontenido {
+        width: 30%;
+        min-height: 150px;
+    }
+    #advertencia {
+        width: 95%;
+        margin-top: 5%;
+    }
+}
